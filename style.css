@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 550px;
+    background-color: coral;
+}
+.catalog{
+    height: 600px;
+    background-color: darkgoldenrod;
+}
+
+.about{
+    height: 500px;
+    background-color: darkmagenta;
+}
+
+.our-team{
+    height: 500px;
+    background-color: darksalmon;
+}
+
+.advantages{
+    height: 500px;
+    background-color: darkseagreen;
+}
+
+.reviews{
+    height: 500px;
+    background-color: dimgray;
+}
+
+.order-area{
+    height: 500px;
+    background-color: dodgerblue;
+}
+
+.footer{
+    height: 500px;
+    background-color: green;
+}
+
