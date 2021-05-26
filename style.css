@@ -1,45 +1,171 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-header{
-    height: 550px;
-    background-color: coral;
-}
-.catalog{
-    height: 600px;
-    background-color: darkgoldenrod;
-}
-
-.about{
-    height: 500px;
-    background-color: darkmagenta;
-}
-
-.our-team{
-    height: 500px;
-    background-color: darksalmon;
+header {
+  width: 80%;
+  height: 550px;
+  background-color: coral;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
 }
 
-.advantages{
-    height: 500px;
-    background-color: darkseagreen;
+header .header-top {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 4fr 3fr;
+      grid-template-columns: 4fr 3fr;
 }
 
-.reviews{
-    height: 500px;
-    background-color: dimgray;
+header .header-top .header-top-left {
+  width: 100%;
 }
 
-.order-area{
-    height: 500px;
-    background-color: dodgerblue;
+header .header-top .header-top-left .logo {
+  color: white;
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: bold;
+  padding: 10px;
+  width: 100%;
 }
 
-.footer{
-    height: 500px;
-    background-color: green;
+header .header-top .header-top-right {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
+header .header-top .header-top-right nav {
+  width: 100%;
+}
+
+header .header-top .header-top-right nav .header-menu {
+  color: white;
+}
+
+header .header-top .header-top-right nav .header-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+header .header-top .header-top-right nav .header-menu li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header .header-top .header-top-right nav .header-menu li a:hover {
+  color: yellow;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header .header-top .header-top-right .header-icons {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #EBEBEB;
+}
+
+header .header-center {
+  height: 460px;
+}
+
+header .header-bottom {
+  background: red;
+}
+
+header .header-bottom .header-soc-networks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header-bottom .header-soc-networks .fa {
+  color: white;
+}
+
+.catalog {
+  height: 600px;
+  background-color: darkgoldenrod;
+}
+
+.about {
+  height: 500px;
+  background-color: darkmagenta;
+}
+
+.about .location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about .location .adress {
+  color: white;
+  font-size: 20px;
+}
+
+.about .location #map {
+  height: 400px;
+  width: 400px;
+}
+
+.our-team {
+  height: 500px;
+  background-color: darksalmon;
+}
+
+.advantages {
+  height: 500px;
+  background-color: darkseagreen;
+}
+
+.reviews {
+  height: 500px;
+  background-color: dimgray;
+}
+
+.order-area {
+  height: 500px;
+  background-color: dodgerblue;
+}
+
+.footer {
+  height: 500px;
+  background-color: green;
+}
+/*# sourceMappingURL=style.css.map */

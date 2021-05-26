@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 80%;
+    height: 550px;
+    background-color: coral;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+    .header-top {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 4fr 3fr;
+        // justify-content: space-between;
+        // align-items: center;
+
+        .header-top-left {
+            width: 100%;
+
+            .logo {
+                color: white;
+                font-size: 3rem;
+                font-style: italic;
+                font-weight: bold;
+                padding: 10px;
+                width: 100%;
+            }
+        }
+
+        .header-top-right {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+            nav {
+                width: 100%;
+
+
+                .header-menu {
+                    color: white;
+
+                    li {
+                        display: inline-block;
+                        margin-left: 20px;
+
+                        a {
+                            color: white;
+                            text-decoration: none;
+                            font-size: 1.2rem;
+                            transition: 0.5s;
+
+                            &:hover {
+                                color: yellow;
+                                transition: 0.5s;
+                            }
+                        }
+
+                    }
+
+                }
+            }
+
+            .header-icons {
+                width: 50%;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                color: #EBEBEB;
+            }
+        }
+    }
+
+    .header-center {
+        height: 460px;
+    }
+
+    .header-bottom {
+        background: red;
+
+        .header-soc-networks {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .fa {
+                color: white;
+            }
+        }
+    }
+}
+
+
+.catalog {
+    height: 600px;
+    background-color: darkgoldenrod;
+}
+
+.about {
+    height: 500px;
+    background-color: darkmagenta;
+
+    .location {
+        display: flex;
+
+        .adress{
+            color: white;
+            font-size: 20px;
+        }
+
+        #map {
+            height: 400px;
+            width: 400px;
+        }
+    }
+}
+
+.our-team {
+    height: 500px;
+    background-color: darksalmon;
+}
+
+.advantages {
+    height: 500px;
+    background-color: darkseagreen;
+}
+
+.reviews {
+    height: 500px;
+    background-color: dimgray;
+}
+
+.order-area {
+    height: 500px;
+    background-color: dodgerblue;
+}
+
+.footer {
+    height: 500px;
+    background-color: green;
+}

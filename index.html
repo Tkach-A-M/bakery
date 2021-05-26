@@ -5,61 +5,107 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <title>Document</title>
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+    <title>Best Bakery</title>
 </head>
 
 <body>
-    <header>
-        <div class="logo"></div>
-        <nav>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </nav>
-        <div class="loin"></div>
-        <div class="search"></div>
-        <div class="cart"></div>
-    <div class="header-soc-networks">
+    <header class="header">
+        <div class="header-top">
+            <div class="header-top-left">
+                <div class="logo">
+                    Logo
+                </div>
+            </div>
+            <div class="header-top-right">
+                <nav>
+                    <ul class="header-menu">
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#catalog">Каталог</a></li>
+                        <li><a href="#about">О компании</a></li>
+                        <li><a href="#our-team">Наши стотрудники</a></li>
+                        <li><a href="#advantages">Наши преимущества</a></li>
+                        <li><a href="#reviews">Отзывы</a></li>
+                        <li><a href="#order-area">Заказать</a></li>
+                    </ul>
+                </nav>
+                <div class="header-icons">
+                    <div class="loin">
+                        <span><i class="fa fa-user-o" aria-hidden="true"></i></span>
+                    </div>
+                    <div class="search">
+                        <span><i class="fa fa-search" aria-hidden="true"></i></span>
+                    </div>
+                    <div class="cart">
+                        <span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                    </div>
+                </div>
+            </div>
 
-    </div>
-    <div class="header-slider">
+        </div>
+        </div>
+        <div class="header-center">
+            <div class="header-slider">
 
-    </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="header-soc-networks">
+                <div><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></div>
+                <div><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+                <div><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></div>
+                <div><a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a></div>
+                <div><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
+            </div>
+        </div>
     </header>
-    <div class="catalog">
+    <div class="catalog" id="catalog">
+        <p>Каталог</p>
         <div class="catalog-slider">
 
         </div>
     </div>
-    <div class="about">
-
+    <div class="about" id="about">
+        <p>О компании</p>
+        <div class="location">
+            <p class="adress">
+                Город, Улица, Дом
+            </p>
+            <div id="map"></div>
+        </div>
     </div>
-    <div class="our-team">
+    <div class="our-team" id="our-team">
+        <p>Наши стотрудники</p>
         <div class="our-team-slider">
 
         </div>
     </div>
-    <div class="advantages">
-
+    <div class="advantages" id="advantages">
+        <p>Наши преимущества</p>
     </div>
-    <div class="reviews">
+    <div class="reviews" id="reviews">
+        <p>отзывы</p>
         <div class="reviews-slider">
 
         </div>
     </div>
-    <div class="order-area">
+    <div class="order-area" id="order-area">
+        <p>Оформить заказ</p>
         <div class="order-form"></div>
     </div>
     <footer class="footer">
 
     </footer>
+    <script src="map.js"></script>
     <script src="script.js"></script>
 </body>
 
